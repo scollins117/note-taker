@@ -11,6 +11,6 @@ function createNote(body, notesArray) {
     return note;
   }
 
-module.export = {
+module.exports = {
     createNote
 };
