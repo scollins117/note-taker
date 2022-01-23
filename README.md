@@ -29,13 +29,13 @@
 
 
   ## Installation
-  Clone the git respository. Run npm init --y to install necessary packages. Run the command node server.js to run the program from your local host. The deployed application is available at: https://fathomless-retreat-85951.herokuapp.com/notes The program allows you to create and delete notes.
+  Clone the git respository. Run npm init --y to install necessary packages. Run the command node server.js to run the program from your local host. The deployed application is available at: https://fathomless-retreat-85951.herokuapp.com/ The program allows you to create and delete notes.
 
   ## License
   Created as a part of The Ohio State University Web Developer Code Bootcamp.
 
   ## Usage
-  Access the deployed application here: https://fathomless-retreat-85951.herokuapp.com/notes
+  Access the deployed application here: https://fathomless-retreat-85951.herokuapp.com/
 
   Enter note title and text of the note. Then click the save icon in the top right of the screen. Note will appear on the left side of the screen. Press the trash can icon to delete the note. 
 
