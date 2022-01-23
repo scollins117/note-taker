@@ -16,10 +16,11 @@ router.post('/notes', (req, res) => {
     res.json(note);
 });
 
+// Route parameters :👌 
 router.delete('/notes/:id', async (req, res) => {
     const { id } = req.params
-    notesArray = await deleteNote(id, notesArray);
-    res.json(notesArray);
+    notes = await deleteNote(id, notes);
+    res.json(notes);
 });
 
 module.exports = router;
