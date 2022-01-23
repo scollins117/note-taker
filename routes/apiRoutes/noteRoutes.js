@@ -16,7 +16,6 @@ router.post('/notes', (req, res) => {
     res.json(note);
 });
 
-// Route parameters :👌 
 router.delete('/notes/:id', async (req, res) => {
     const { id } = req.params
     notes = await deleteNote(id, notes);
