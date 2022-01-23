@@ -16,4 +16,13 @@ router.post('/notes', (req, res) => {
     res.json(note);
 });
 
+router.delete('/notes', (req, res) => {
+    const userIndex = getUserIndex(req.params.userId)
+   
+    if (userIndex === -1) return res.status(404).json({})
+   
+    users.splice(userIndex, 1)
+    res.json(users)
+})
+
 module.exports = router;
