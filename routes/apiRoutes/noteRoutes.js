@@ -1,6 +1,6 @@
 const router = require('express').Router();
 
-const { createNote } = require('../../lib/notes');
+const { createNote, deleteNote } = require('../../lib/notes');
 let { notes } = require('../../db/db.json');
 
 router.get('/notes', (req, res) => {
@@ -18,8 +18,8 @@ router.post('/notes', (req, res) => {
 
 router.delete('/notes/:id', async (req, res) => {
     const { id } = req.params
-    notes = await deleteNote(id, notesArray);
+    notesArray = await deleteNote(id, notesArray);
     res.json(notesArray);
-  });
+});
 
 module.exports = router;
